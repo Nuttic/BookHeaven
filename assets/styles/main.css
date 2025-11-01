@@ -1,0 +1,144 @@
+@import url('./landingPage.css');
+
+:root{
+    --text-color: #3f3f3f; 
+    --bg-color: #e7e6e6;
+    --primary-color: #28724f;
+    --accent-color: #34a56f;
+    --secondary-color: #bde4d1;
+}
+@font-face {
+    font-family: 'MainFont';
+    src: url('../media/fonts/LorenzoSans/LorenzoSansItalic.ttf') format('ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: 'MainFont';
+}
+
+body{
+    background: var(--bg-color);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background: var(--primary-color);
+    color: var(--bg-color);
+    font-size: medium;
+}
+
+footer{
+    margin-top: 25px;
+    padding: 25px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav{
+    display: flex; 
+    flex-direction: column;
+}
+
+section{
+    margin: 50px 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--bg-color);
+    padding: 5px;
+    transition: 0.2s;
+}
+a:hover{
+    cursor: pointer;
+    color: var(--accent-color);
+}
+
+h1, h2, h3, h4{
+    color: var(--primary-color);
+    text-align: center;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+h1:hover{
+    transform: scale(1.1);
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+}
+
+button{
+    min-width: 80px;
+    min-height: 40px;
+    padding: 6px 10px;
+    background: var(--primary-color);
+    font-size: large;
+    color: var(--bg-color);
+    border: none;
+    border-radius: 13px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: var(--accent-color);
+    transform: scale(1.1);
+}
+
+input{
+    outline-color: var(--primary-color);
+    width: 70%;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: medium;
+}
+
+form{
+    margin: 20px auto;
+    width: 500px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: var(--secondary-color);
+    border-radius: 20px;
+    font-size: large;
+}
+
+video{
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px rgb(0,0,0, 0.3);
+   
+}
+
+img{
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
