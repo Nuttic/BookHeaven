@@ -1,13 +1,13 @@
 #info{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 30px;
     margin: 25px;
 }
 
-#new-books{
+.new-books-section{
     margin: 25px;
     display: flex;
     justify-content: center;
@@ -23,18 +23,35 @@
     margin-right: 30px;
 }
 
+.ctnr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__nav{
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer__nav{
+    flex-direction: column;
+    align-items: baseline;
+}
+
 .slider{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     margin: 20px 0;
-    padding: 20px 12px;
+    padding: 20px 15px;
     border-radius: 20px;
-    background: var(--secondary-color);
+    background: var(--bg-color);
 }
 
-.slide-text{
+.slider__content{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +60,22 @@
     font-size: large;
 }
 
-.about{
+.hello-section{
+    flex-direction: column;
+    width: 100%;
+    background: var(--secondary-color);
+    padding: 20px 0;
+}
+
+.slider-controls{
+    width: 400px;
+    border-radius: 20px;
+    background: var(--bg-color);
+    padding: 10px;
+    gap: 30px;
+}
+
+.func-list{
     list-style: circle; 
     display: flex; 
     flex-direction: column; 
@@ -52,22 +84,22 @@
     text-align: justify;
 }
 
-.info-text{
+.info__content{
     flex: 2;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.info-video{
-    flex: 1;
+.sign_in_section{
+    flex-direction: column;
 }
 
-.pass-link{
+.sign-in__forgot{
     color: var(--text-color);
 }
 
-.books-list{
+.new-books__list{
     margin: 30px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -75,7 +107,7 @@
     grid-row-gap: 20px;
 }
 
-.book-container{
+.book{
     height: 550px;
     width: 350px;
     display: flex;
@@ -90,23 +122,37 @@
     border-radius: 13px;
 }
 
-.book-container:hover{
+.book:hover{
     box-shadow: 1px 1px 5px rgb(0,0,0, 0.3);
     transform: scale(1.1);
 }
 
-.book-container p {
+.book__title{
+    color: var(--primary-color);
+    font-size: large;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.book__title:hover{
+    color: var(--accent-color);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.book__description {
     white-space: nowrap;
     overflow: hidden;         
     text-overflow: ellipsis; 
     width: 200px;  
 }
 
-.book-container img{
+.book__img{
     width: 200px;
 }
 
-.search-container{
+.search__wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,41 +164,35 @@
     background: var(--secondary-color);
 }
 
-.search-input{
+.search__input{
     padding: 10px;
     width: 70%;
 }
 
-.search-btn{
+.search__button{
     width: 20%;
 }
 
-.review-list{
-    justify-content: space-evenly;
-    align-items: center;
+.review-section{
+    padding: 20px ;
     background: var(--secondary-color);
-    padding: 20px;
-    margin: 30px 0;
+    flex-direction: column;
 }
-
-.review-container{
+.review{
     background: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    gap: 10px;
+    flex-direction: column;
     width: 400px;
     height: 320px;
     padding: 20px;
     border-radius: 20px;
 }
 
-.rev-info{
-    width: 250px;
-    display: flex;
+.review__content{
     flex-direction: column;
-    text-align: justify;
-    gap: 10px;
+}
+
+.review__date{
+    color: var(--primary-color);
 }
 
 .rev{
@@ -160,11 +200,6 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-.stars-list{
-    display: flex;
-    justify-content: center;
 }
 
 .stars-list img {
@@ -178,6 +213,14 @@
     border-radius: 50%;
 }
 
+.review__controls{
+    width: 400px;
+    border-radius: 20px;
+    background: var(--bg-color);
+    padding: 10px;
+    gap: 30px;
+}
+
 .news-form{
     background: var(--accent-color);
     height: 450px;
@@ -185,11 +228,7 @@
     position: relative;
     
 }
-.news-form label{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.news-form__label{
     width: 70%;
     color: var(--bg-color);
     
@@ -201,14 +240,14 @@
     color: var(--bg-color);
 }
 
-.news-form input{
+.news-form__input{
     background: var(--primary-color);
     color: var(--bg-color);
     border: none;
     outline: none;
 }
 
-input[type="checkbox"] {
+.news-form__chek-input {
     width: 20px;
     height: 20px;
 }
@@ -220,18 +259,14 @@ input[type="checkbox"] {
     object-fit: contain;
 }
 
-.news-form button{
+.news-form__button{
     position: absolute;
     bottom: 40px;
 
 }
 
-.input-container{
-    display: flex;
+.news-form__block{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     position: absolute;
     top: 100px;
 }

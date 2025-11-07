@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <!-- <div class="logo"></div> -->
+        <nav class="header__nav ctnr">
+            <a class="nav__link" href="./index.html#search">Поиск</a>
+            <a class="nav__link" href="./index.html#info">О нас</a>
+            <a class="nav__link" href="./index.html#new-books">Новые книги</a>
+            <a class="nav__link" href="./index.html#reviews">Отзывы</a>
+            <a class="nav__link" href="./index.html#footer">Контакты</a>
+            <a class="nav__link" href="">Регистрация</a>
+            <a class="nav__link" href="./index.html#sign-in">Авторизация</a>
+            <a class="nav__link" href="">Личный кабинет</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section id="hello" class="hello-section ctnr">
+            <div class="slider">
+                <div class="slider__content">
+                    <h2 class="slider__title">Читайте любимые книги онлайн!</h2>
+                    <p class="slider__text">Загружайте свои книги или читайте книги, добавленные нами</p>
+                    <button class="slider__button">Начать чтение</button>
+                </div>
+                <img class="slider__img" src="./assets/media/img/book_all_about_ChatGPT.jpg" alt="Пример интересной книги с нашего сайта">
+            </div>
+             <div class="slider-controls ctnr">
+                <button>Предыдущий слайд</button>
+                <button>Следующий слайд</button>
+            </div>
+        </section>
+        <section id="info">
+            <div class="info__content">
+                <h1 class="info__title">Добро пожаловать на BookHaven!</h1>
+                <p class="info__text">BookHaven — это уникальная платформа для бесплатного чтения книг, где каждый найдет что-то по душе. На нашем сайте собрана обширная библиотека произведений различных жанров: от классической литературы до современных бестселлеров, научно-популярных книг и детских сказок. Мы стремимся сделать чтение доступным для всех, поэтому наш ресурс полностью бесплатный и не требует подписок или скрытых платежей.</p>
+                <span> На BookHaven вы сможете: </span>
+                <ul class="func-list">
+                    <li> Читать книги онлайн в удобном формате. </li>
+                    <li >Скачивать произведения для оффлайн-чтения.</li>
+                    <li >Открывать для себя новых авторов и делиться своими впечатлениями с другими читателями.</li>
+                    <li >Создавать персональные подборки и сохранять любимые книги.</li>
+                    <li >Наслаждаться чтением на любом устройстве: смартфоне, планшете, ноутбуке или компьютере. Наш сайт адаптирован под все экраны, чтобы вы могли погрузиться в мир литературы где угодно и когда угодно.</li> 
+                </ul>
+                <span class="info__ending">BookHaven — это место, где каждая книга становится доступной, а чтение — удовольствием. Присоединяйтесь к нашему сообществу книголюбов и откройте для себя мир литературы без границ!</span>
+            </div>
+        <section id="video-section" class="video-section">
+            <div class="video__container">
+                <video>
+                    <source src="./assets/media/video/howto.mp4" type="video/mp4">
+                    <p class="video__error-text">Ваш браузер не поддерживает видео тег.</p>
+                </video>
+            </div>
+        </section>
+        </section>
+        <section id="sign-in" class="sign_in_section ctnr">
+            <h2>Авторизация</h2>
+            <form action="#" class="sign-in__form">
+                <input name="email" type="email" placeholder="Введите почту" required>
+                <input name="password" type="password" placeholder="Введите пароль" required>
+                <button class="sign-in__button" type="submit">Войти</button>
+            </form>
+            <a class="sign-in__forgot">Забыли пароль?</a>
+        </section>
+        <section id="search" class="search-section">
+            <h2 class="search__title">Ищите любимые книги на нашем сайте!</h2>
+            <div class="search__wrapper">
+                <input 
+                name="search" 
+                type="search" 
+                class="search__input" 
+                id="search__input" 
+                placeholder="Введите название книги">
+                <button class="search__button">Поиск</button>
+            </div>
+        </section>
+        <section id="new-books" class="new-books-section">
+            <h2 class="new-books__title">Новые книги</h2>
+            <ul class="new-books__list">
+                <li class="book-container">
+                    <div class="book">
+                        <img class="book__img" src="./assets/media/img/book_shadow_s_bride.jpg" alt="Обложка книги">
+                        <span class="book__title">Невеста сумеречной Тени</span>
+                        <p class="book__description">Меня казнили за участие в заговоре против императора. Как несправедливо, ведь я совершенно не при чем! Да, я знала, что брат императора владеет запретной магией Тени. Да, я 		шантажом вынудила его на мне жениться. Но я точно неповинна в государственной измене! К счастью, судьба дала мне второй шанс, вот только изменить будущее не так уж и просто: теперь сам 		великий князь не отпускает меня, а в столице Сиории по-прежнему зреет заговор, и я вынуждена бороться за свою жизнь посреди дворцовых интриг и запретной магии</p>
+                        <button class="book__button">Читать</button>
+                    </div>
+                </li>
+                <li class="book-container">
+                    <div class="book">
+                        <img class="book__img" src="./assets/media/img/book_game_on_field.jpg" alt="Обложка книги">
+                        <span class="book__title">Игра на чужом поле</span>
+                        <p class="book__description">Толе Штыбе предстоит вести свою партию сразу на нескольких чужих досках — от политической арены до коммерческого банка. Его жизнь закручивается по законам непростых девяностых: 		победа на выборах, рискованные ходы в кооперативе с «сибирскими» окнами, неожиданные «шахи» на новой должности в крайкоме и международный боксерский турнир в Норвегии. Штыбе нужно 		просчитывать ходы на несколько шагов вперед, где каждый промах может стать матом, а каждый удачный ход — новой победой.</p>
+                        <button class="book__button">Читать</button>
+                    </div>
+                </li>
+                <li class="book-container">
+                    <div class="book">
+                        <img class="book__img" src="./assets/media/img/book_all_about_ChatGPT.jpg" alt="Обложка книги">
+                        <span class="book__title">Всё об ИИ чат-боте ChatGPT</span>
+                        <p class="book__description">Книга, которая представляет собой обзор и практическое руководство по использованию мощного инструмента искусственного интеллекта - чат-бота ChatGPT. Книга содержит 100 бизнес-	идей, которые можно реализовать, используя возможности ChatGPT, а также 100 запросов для автоматизации задач и 100 примеров бытовых запросов для улучшения жизни и повышения эффективности 	работы. В книге также описаны основные принципы работы и функции ChatGPT, а также даются советы по оптимальному использованию этого инструмента. "Всё об ИИ чат-боте ChatGPT" является 	необходимой книгой для тех, кто хочет использовать современные технологии для достижения своих целей в бизнесе и повседневной жизни.</p>
+                        <button class="book__button">Читать</button>
+                    </div>
+                </li>
+                <li class="book-container">
+                    <div class="book">
+                        <img class="book__img" src="./assets/media/img/book_pediatrics.jpg" alt="Обложка книги">
+                        <span class="book__title">Занудная педиатрия для мам, пап, бабушек и дедушек: Разное про незаразное</span>
+                        <p class="book__description">Роман Шиян – врач-педиатр с более чем 10-летним стажем, сторонник доказательного подхода в медицине, автор популярного блога «Занудная педиатрия». В книге он освещает самые разные 	темы, связанные с неинфекционными заболеваниями и расстройствами у детей, которые наиболее часто беспокоят его пациентов и читателей. Для чего младенца выкладывают на животик? Как лечат 	крапивницу, аллергический ринит и диарею? Что делать, если ребенка укачивает в транспорте или ужалила медуза? Какие симптомы бывают при воспалении аппендицита? Доктор Роман Шиян просто и 	понятно отвечает на эти и многие другие вопросы, приводит данные исследований и знакомит с современными подходами к терапии. После прочтения этой книги вы не станете врачом, однако она может 	позволить вам более осознанно относиться к здоровью своих детей, снизить уровень тревожности и иметь представление, почему врачи дают вам те или иные рекомендации и чего ожидать в дальнейшем.</p>
+                         <button class="book__button">Читать</button>
+                    </div>
+                </li>
+                <li class="book-container">
+                    <div class="book">
+                        <img class="book__img" src="./assets/media/img/book_russian_kitchen.jpg" alt="Обложка книги">
+                        <span class="book__title">Готовим по-русски. Рецепты, традиции, наследие</span>
+                        <p class="book__description">Русская кухня – это живой организм, который не перестает развиваться. Этот организм не только вбирает в себя новые мировые кулинарные тенденции, но и сам обогащает общемировую 	кулинарную культуру. Поэтому в своей новой книге Олег Ольхов приводит рецепты самых разных эпох и времен – от древнерусской кухни IX-XVI веков (по классификации В.В. Похлебкина) до 	современных рецептов признанных мастеров русской кухни. В книге есть интересные монастырские рецепты, основанные на современных русских кулинарных тенденциях, и традиционные рецепты, 	посвященные Пасхе и Рождеству Христову. Наконец собственные рецепты автора, основанные на опыте работы в ресторанах, в которых устроены русские печи.</p>
+                        <button class="book__button">Читать</button>
+                    </div>
+                </li>
+                <li class="book-container">
+                    <div class="book">
+                        <button class="book_button">Смотреть все</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="review" class="review-section ctnr">
+            <h2>Отзывы пользователей нашего сайта</h2>
+                    <div class="review ctnr">
+                        <div class="ctnr">
+                             <img class="avatar" src="./assets/media/img//avatar_review_1.jpg" alt="Автор отзыва 1">
+                             <ul class="stars-list ctnr">
+                                <li class="star__item"><img src="./assets/media/img/star.png" alt="Звездочка"></li>
+                                <li class="star__item"><img src="./assets/media/img/star.png" alt="Звездочка"></li>
+                                <li class="star__item"><img src="./assets/media/img/star.png" alt="Звездочка"></li>
+                                <li class="star__item"><img src="./assets/media/img/star.png" alt="Звездочка"></li>
+                                <li class="star__item"><img src="./assets/media/img/star.png" alt="Звездочка"></li>
+                            </ul>
+                        </div>
+                        <div class="review__content ctnr">
+                            <h4 class="user-name">Мария Чирнявская</h4>
+                            <p class="review__text">Очень увлекательная история "Невеста сумеречной Тени" с элементами магии и дворцовых интриг. Главная героиня сильная и харизматичная, а сюжет держит в напряжении до последней страницы. Любителям фантастики и романтики — обязательно к прочтению!</p>
+                            <p class="review__date">15.10.2024</p>
+                        </div>
+                    </div>
+                    <div class="review__controls ctnr">
+                        <button>Предыдущий отзыв</button>
+                        <button>Следующий отзыв</button>
+                    </div>
+        </section>
+      <section id="news" class="news-section">
+    <h2 class="news-title">Узнавайте новости сайта самыми первыми!</h2>
+    <form class="news-form" action="#">
+        <h3>Подписка на новости</h3>
+        <div class="news-form__block ctnr">
+            <label for="email" class="news-form__label ctnr">
+                Email:
+                <input
+                class="news-form__input"
+                name="email" 
+                type="email" 
+                id="email" 
+                placeholder="Введите почту"
+                required>
+            </label>
+            <label for="agree" class="news-form__label ctnr">
+                <input 
+                class="news-form__chek-input"
+                type="checkbox" 
+                id="agree"
+                name="checkbox">
+                Я согласен на обработку персональных данных
+            </label>
+        </div>
+        <img src="./assets/media/img/Голубь.png" alt="Изображение голубя">
+        <button class="news-form__button">Подписаться</button>
+    </form>
+</section>
+    </main>
+    <footer id="footer" class="footer">
+        <div class="footer-contacts">
+            <span>Наши контакты</span>
+            <a href="tel:" class="nav-link">+7 (800) 123-45-67</a>
+            <a href="mailto:" class="nav-link">books@prof.ru</a>
+        </div>
+        <nav class="footer__nav ctnr">
+                <a href="" class="nav__link">Главная</a>
+                <a href="" class="nav__link">Регистрация</a>
+                <a href="" class="nav__link">Каталог</a>
+                <a href="" class="nav__link">Читать книгу</a>
+                <a href="" class="nav__link">Читать книгу — темная тема</a>
+                <a href="" class="nav__link">Личный кабинет</a>
+                <a href="" class="nav__link">Личный кабинет администратора</a>
+        </nav>
+    </footer>
